@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../static/button/css/style.css">
+    <meta charset="UTF-8"/>
+    <title>Test</title>
+
+    <link rel="stylesheet" href="../static/button/css/htmleaf-demo.css">
     <link rel="stylesheet" type="text/css" href="../static/personal/css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="../static/personal/fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/personal/css/demo.css"/>
     <link rel="stylesheet" type="text/css" href="../static/personal/css/component.css"/>
 
-    <link rel="stylesheet" type="text/css" href="../static/personal/css/demo.css">
-
-
+    <link rel="stylesheet" href="../static/button/css/style.css">
 </head>
 <body>
-
 <div class="container">
+    <div style="background-color: #dedede;">
+        <p style="background-color: white;font-size: 400%">Hello Cc</p>
 
+        <form>
 
-    <section class="content">
-        <h3>Hello Cc</h3>
         <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" type="text" id="input-4"/>
-					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-						<span class="input__label-content input__label-content--hoshi">Name</span>
-					</label>
-				</span>
-        <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Name</span>
+                    </label>
+                </span>
+            <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-5"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-5">
 						<span class="input__label-content input__label-content--hoshi">Street</span>
 					</label>
 				</span>
-        <span class="input input--hoshi">
+            <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-6"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-6">
 						<span class="input__label-content input__label-content--hoshi">Town</span>
 					</label>
 				</span>
 
-            <span class="input input--jiro">
-					<input class="input__field input__field--jiro" type="text" id="input-10"/>
-					<label class="input__label input__label--jiro" for="input-10">
-						<span class="input__label-content input__label-content--jiro">Cat's Name</span>
+            <span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-1"/>
+					<label class="input__label input__label--haruki" for="input-1">
+						<span class="input__label-content input__label-content--haruki">First Name</span>
 					</label>
 				</span>
-            <span class="input input--jiro">
-					<input class="input__field input__field--jiro" type="text" id="input-11"/>
-					<label class="input__label input__label--jiro" for="input-11">
-						<span class="input__label-content input__label-content--jiro">Dog's Name</span>
+            <span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-2"/>
+					<label class="input__label input__label--haruki" for="input-2">
+						<span class="input__label-content input__label-content--haruki">Last Name</span>
 					</label>
 				</span>
-            <span class="input input--jiro">
-					<input class="input__field input__field--jiro" type="text" id="input-12"/>
-					<label class="input__label input__label--jiro" for="input-12">
-						<span class="input__label-content input__label-content--jiro">Hamster's Name</span>
+            <span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-3"/>
+					<label class="input__label input__label--haruki" for="input-3">
+						<span class="input__label-content input__label-content--haruki">Email</span>
 					</label>
 				</span>
-        </section>
-
-
-
-
-
-		<button class="btn-4" style="padding-left: 5%;padding-right: 5%" >Button 4</button>
-
-		<button class="btn-6" style="padding-left: 5%;padding-right: 5%">Button 6</button><br>
+    </div>
+    <br>
+    <button class="btn-7" type="submit" style="margin: 5em;padding-left: 4%;padding-right: 4%">Save</button>
+    <button class="btn-9" type="reset" style="margin: 5em;padding-left: 4%;padding-right: 4%">Clear</button>
+    </form>
 
 
 </div><!-- /container -->
-<script src="../../static/personal/js/classie.js"></script>
+<script src="../static/personal/js/classie.js"></script>
 <script>
-    (function () {
+    (function a() {
         // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
         if (!String.prototype.trim) {
             (function () {
@@ -104,9 +100,5 @@
         }
     })();
 </script>
-
-
-
-
 </body>
 </html>

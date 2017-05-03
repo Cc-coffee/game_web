@@ -6,6 +6,8 @@
 	max-width: 400px;
 	width: calc(100% - 2em);
 	vertical-align: top;
+	margin-top: 2em;
+
 }
 
 .input__field {
@@ -67,7 +69,7 @@
 /* Haruki */
 
 .input--haruki {
-	margin: 4em 1em 1em;
+	margin: 5em 1em 5em;
 }
 
 .input__field--haruki {
@@ -135,7 +137,7 @@
 }
 
 .input__field--hoshi {
-	margin-top: 1em;
+	margin-top: 2em;
 	padding: 0.85em 0.15em;
 	width: 100%;
 	background: transparent;

@@ -10,7 +10,7 @@ Moment(app)
 #     return 'Hello World!'
 @app.route('/test')
 def test():
-    return render_template('test.html')
+    return render_template('index6.html')
 
 @app.route('/')
 def index():
