@@ -52,6 +52,33 @@
 			margin-left: -150px;
 			margin-top: -220px;
 		}
+		.validate-box{
+			width: 200px;
+			height: 340px;
+			vertical-align: middle;
+			white-space: normal;
+			margin: 0 auto;
+			position: absolute;
+			z-index: 2;
+			left: 50%;
+			top: 50%;
+			margin-left: 170px;
+			margin-top: -60px;
+		}
+		.flash-box{
+			width: 600px;
+			height: 300px;
+			vertical-align: top;
+			white-space: normal;
+			margin: 0 auto;
+			position: absolute;
+			z-index: 2;
+			left: 40%;
+			top:30%;
+			margin-left: -150px;
+			margin-top: -220px;
+            text-align: center;
+		}
 		.register-box{
 			height: 490px;
 			margin-top: -270px;
@@ -102,7 +129,7 @@
     		color: #555;
 		}
 		.index-tab .index-slide-nav a:hover{
-			color: #0f88eb：
+			color: #0f88eb;
 			opacity: 1;
 		}
 		.index-tab .index-slide-nav a.active{

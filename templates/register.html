@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>注册 - 知乎 - Thousands Find</title>
-	<meta author="Cc">
-	<link rel="stylesheet" type="text/css" href="../static/login/style/register-login.css">
+    <meta charset="utf-8">
+    <title>注册 - Cc - Thousands Find</title>
+    <meta author="Cc">
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" type="text/css" href="../static/login/style/register-login.css">
+    <link rel="stylesheet" type="text/css" href="../static/login/css/bootstrap.min.css">
+
 </head>
-<body>
+<body onload="load()">
 <div id="box"></div>
+<div class="flash-box" id="flash-box">
+    {% for message in get_flashed_messages(with_categories=True) %}
+        <div class="alert alert-{{ message[0] }}">
+            <button id="flash" type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message[1] }}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="validate-box" id="validate-box">
+    <a id="validate_email" href="#" onclick="validate_email()"  onmouseover="this.style.color='red'"
+       onmouseout="this.style.color='blue'">检查邮箱是否可用</a><br>
+    <div style="margin-top: 70px" id="valiate_font_wait">
+        <font align="left" id="validate_password" color="#1e90ff">等待验证</font>
+    </div>
+    <div style="margin-top: 70px" id="valiate_font_not" hidden>
+        <font align="left" color="red" >2次密码不一致</font>
+    </div>
+    <div style="margin-top: 70px" id="valiate_font_yes" hidden>
+        <font align="left" color="green">密码一致</font>
+    </div>
+</div>
+
 <div class="cent-box register-box">
-	<div class="cent-box-header">
-		<h1 class="main-title hide">知乎</h1>
-		<h2 class="sub-title">生活热爱分享 - Thousands Find</h2>
-	</div>
+    <div class="cent-box-header">
+        <h1 style="font-size: 50px;color: #00adee">Cc</h1>
+        <h2 class="sub-title">生活热爱分享 - Thousands Find</h2>
+    </div>
+    <div class="cont-main clearfix">
+        <div class="index-tab">
+            <div class="index-slide-nav">
+                <a href="login">登录</a>
+                <a href="register" class="active">注册</a>
+                <div class="slide-bar slide-bar1"></div>
+            </div>
+        </div>
+        <form method="post" action="register">
+            <div class="login form">
+                <div class="group">
+                    <div class="group-ipt email">
+                        <input type="email" name="email" id="email" class="ipt" placeholder="邮箱地址" required
+                               value={{ var1 }}>
+                    </div>
+                    <div class="group-ipt user">
+                        <input type="text" name="username" id="username" class="ipt" placeholder="设置用户名"
+                               required>
+                    </div>
+                    <div class="group-ipt password">
+                        <input type="password" onfocus="validate_password()"  name="password" id="password" class="ipt" placeholder="设置登录密码"
+                               required>
+                    </div>
+                    <div class="group-ipt password1">
+                        <input type="password" onfocus="validate_password()"  name="password_2" id="password_2" class="ipt" placeholder="重复密码"
+                               required>
+                    </div>
+                    <div class="group-ipt verify">
+                        <input type="text" onfocus="validate_password()" name="verify" id="verify" class="ipt"
+                               placeholder="输入验证码" required>
+                    </div>
+                </div>
+            </div>
 
-	<div class="cont-main clearfix">
-		<div class="index-tab">
-			<div class="index-slide-nav">
-				<a href="login">登录</a>
-				<a href="register" class="active">注册</a>
-				<div class="slide-bar slide-bar1"></div>				
-			</div>
-		</div>
-
-		<div class="login form">
-			<div class="group">
-				<div class="group-ipt email">
-					<input type="email" name="email" id="email" class="ipt" placeholder="邮箱地址" required>
-				</div>
-				<div class="group-ipt user">
-					<input type="text" name="user" id="user" class="ipt" placeholder="选择一个用户名" required>
-				</div>
-				<div class="group-ipt password">
-					<input type="password" name="password" id="password" class="ipt" placeholder="设置登录密码" required>
-				</div>
-				<div class="group-ipt password1">
-					<input type="password" name="password1" id="password1" class="ipt" placeholder="重复密码" required>
-				</div>
-				<div class="group-ipt verify">
-					<input type="text" name="verify" id="verify" class="ipt" placeholder="输入验证码" required>
-				</div>
-			</div>
-		</div>
-
-		<div class="button">
-			<button type="submit" class="login-btn register-btn" id="button">注册</button>
-		</div>
-	</div>
+            <div class="button">
+                <button type="submit" class="login-btn register-btn" id="button">注册</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 <div class="footer">
-	<p>知乎 - Thousands Find</p>
-	<p>Designed By  <a href="Cc">Cc</a> 2017</p>
+    <p>Cc - Thousands Find</p>
+    <p>Designed By <a href="Cc">Cc</a> 2017</p>
 </div>
 
 <script src='../static/login/js/particles.js' type="text/javascript"></script>
@@ -59,5 +92,40 @@
 <script src='../static/login/js/jquery.min.js' type="text/javascript"></script>
 <script src='../static/login/js/layer/layer.js' type="text/javascript"></script>
 <script src='../static/login/js/index.js' type="text/javascript"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script language="JavaScript">
+
+    {#    消息闪现淡出，校验信息隐藏#}
+    function load() {
+        $("#flash-box").fadeOut(4000);
+    }
+    {#    跳转校验邮箱url#}
+    function validate_email() {
+        var str = $('#email').val();
+        if (!str)
+            str = "NULL";
+        var url = "/validate/" + str;
+        window.location.href = url;
+        return false;
+    }
+    {#    校验密码是否一致#}
+    function validate_password() {
+        if ($('#password').val() || $("#password_2").val()) {
+            if ($('#password').val() != $("#password_2").val()) {
+
+                $("#valiate_font_not").show();
+                $("#valiate_font_yes").hide();
+                $("#valiate_font_wait").hide();
+
+            }
+            else {
+                $("#valiate_font_yes").show();
+                $("#valiate_font_not").hide();
+                $("#valiate_font_wait").hide();
+
+            }
+        }
+    }
+</script>
 </body>
 </html>
