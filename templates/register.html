@@ -9,7 +9,13 @@
     <meta http-equiv="Pragma" CONTENT="no-cache">
     <link rel="stylesheet" type="text/css" href="../static/login/style/register-login.css">
     <link rel="stylesheet" type="text/css" href="../static/login/css/bootstrap.min.css">
-
+    <style>
+        .transButton {
+            background-color: transparent;
+            border: 0;
+            color: #6FC0FF;
+        }
+    </style>
 </head>
 <body onload="load()">
 <div id="box"></div>
@@ -36,11 +42,10 @@
         <div style="margin-top: 70px" id="valiate_font_yes" hidden>
             <font align="left" color="green">密码一致</font>
         </div>
-        <div style="margin-top: 60px" id="sent_mail_div">
-            {#            <a href="#" id="sent_mail" style="color:#6FC0FF " onmouseover="this.style.color='#ED5A8C'"#}
-            {#               onmouseout="this.style.color='#6FC0FF'" onclick="send_mail()">发送邮件</a>#}
-
-            <input type="button" value="获取验证码" name="send_email_button" id="send_email_button" onclick="showtime(30)">
+        <div style="margin-top: 80px" id="sent_mail_div">
+            <input type="button" Class="transButton" value="获取验证码" name="send_email_button" id="send_email_button"
+                   onclick="showtime(30)" onmouseover="this.style.color='#ED5A8C'"
+                   onmouseout="this.style.color='#6FC0FF'">
 
         </div>
     </div>
@@ -75,7 +80,7 @@
                         <input type="password" onfocus="validate_password()" name="password" id="password"
                                class="ipt"
                                placeholder="设置登录密码"
-                               required  >
+                               required>
                     </div>
                     <div class="group-ipt password1">
                         <input type="password" onfocus="validate_password()" name="password_2" id="password_2"
@@ -145,11 +150,21 @@
         }
     }
 
+    {#    校验邮箱地址#}
+    function isEmail(str) {
+        var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+        return reg.test(str);
+    }
     {#    倒计时#}
     function showtime(t) {
-        document.bigform.send_email_button.disabled = true;
-        for (i = 1; i <= t; i++) {
-            window.setTimeout("update_p(" + i + "," + t + ")", i * 1000);
+        if (isEmail($("#email").val())) {
+            document.bigform.send_email_button.disabled = true;
+            for (i = 1; i <= t; i++) {
+                window.setTimeout("update_p(" + i + "," + t + ")", i * 1000);
+            }
+        }
+        else {
+            alert("邮箱地址不合法！");
         }
 
     }
@@ -177,7 +192,6 @@
             param['password'] = $('#password').val();
             param['verify'] = $('#verify').val();
             param['username'] = $('#username').val();
-
             postCfg = {
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             };

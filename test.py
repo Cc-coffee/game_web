@@ -24,15 +24,19 @@ def md5(str):
     m.update(str.encode("utf8"))
     return m.hexdigest()
 
-#校验邮箱格式
+
+# 校验邮箱格式
 def validate_emails(e):
-    if len(e)>= 5:
-        if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]",e) !=None:
-            #re.match(pattern, string) 尝试从字符串string的开始匹配一个模式。
+    if len(e) >= 5:
+        if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]", e) != None:
+            # re.match(pattern, string) 尝试从字符串string的开始匹配一个模式。
             return None
     return True
-#全局变量验证码
-verify_send=None
+
+
+# 全局变量验证码
+verify_send = None
+
 
 ##################################################################
 
@@ -71,7 +75,6 @@ def login():
             upsd_2 = User.query.filter_by(email=uemail_1).first().password
         except:
             flash(u'用户名密码错', 'danger')
-            # render_template("login.html")
         else:
             if uemail_1 == uemail_2 and upsd_1 == upsd_2:
                 return redirect(url_for('test'))
@@ -81,7 +84,7 @@ def login():
 
 
 # 注册请求
-@app.route('/validate/register',methods=['POST', 'GET'])
+@app.route('/validate/register', methods=['POST', 'GET'])
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'POST':
@@ -90,7 +93,7 @@ def register():
         uname = request.form['username']
         uverify = request.form['verify']
         global verify_send
-        if uverify==verify_send:
+        if uverify == verify_send:
             USER = User(email=uemail, password=upwd, username=uname)
             db.session.add(USER)
             db.session.commit()
@@ -98,16 +101,17 @@ def register():
             return redirect(url_for("login"))
         else:
             flash(u'验证码输入错误', 'danger')
-            return render_template('register.html',var1=uemail,var2=uname,var3=upwd,var4=uverify)
+            return render_template('register.html', var1=uemail, var2=uname, var3=upwd, var4=uverify)
     return render_template('register.html')
 
-#邮箱格式校验
+
+# 邮箱格式校验
 @app.route('/validate/<email>')
 def validate_email(email):
     if (validate_emails(email)):
         flash(u"请正确填写邮箱格式", 'info')
-        if email=="NULL":
-            email=""
+        if email == "NULL":
+            email = ""
     else:
         try:
             email_2 = User.query.filter_by(email=email).first().email
@@ -117,15 +121,20 @@ def validate_email(email):
             flash(u'邮箱已经被注册', 'warning')
     return render_template("register.html", var1=email)
 
-#发送邮件
-@app.route('/send_mail',methods=['POST', 'GET'])
+
+# 发送邮件
+@app.route('/send_mail', methods=['POST', 'GET'])
 def Send_mail():
-    if request.method =="POST":
-        global verify_send
-        verify_send=GenPassword(4)
-        print(verify_send)
-        strart_send(request.form['email_address'],verify_send)
-    return render_template('register.html',)
+    if request.method == "POST":
+        print("---------")
+        try:
+            global verify_send
+            verify_send = GenPassword(4)
+            strart_send(request.form['email_address'], verify_send)
+        except:
+            flash(u"邮箱不存在", )
+            return redirect(url_for("register"))
+    return render_template('register.html', )
 
 
 if __name__ == '__main__':
