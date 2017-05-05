@@ -3,8 +3,10 @@ from django.http import request
 from flask_moment import Moment
 from datetime import datetime
 from flask import *
+import re
 from model import *
 from flask_bootstrap import Bootstrap
+from send_mail import *
 
 bootstrap = Bootstrap(app)
 # 时间
@@ -21,6 +23,12 @@ def md5(str):
     m.update(str.encode("utf8"))
     return m.hexdigest()
 
+def validate_emails(e):
+    if len(e)>= 5:
+        if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]",e) !=None:
+            #re.match(pattern, string) 尝试从字符串string的开始匹配一个模式。
+            return None
+    return True
 
 ##################################################################
 
@@ -48,6 +56,7 @@ def index():
 
 
 # 登录请求
+@app.route('/validate/login')
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     #  flash(u'登录成功，欢迎回来！', 'success')
@@ -88,10 +97,10 @@ def register():
 #邮箱格式校验
 @app.route('/validate/<email>')
 def validate_email(email):
-    print("--", email, '--')
-    if (email == 'NULL'):
+    if (validate_emails(email)):
         flash(u"请正确填写邮箱格式", 'info')
-        email = ''
+        if email=="NULL":
+            email=""
     else:
         try:
             email_2 = User.query.filter_by(email=email).first().email
@@ -99,13 +108,17 @@ def validate_email(email):
             flash(u'邮箱尚未注册', 'success')
         else:
             flash(u'邮箱已经被注册', 'warning')
-            print(email_2)
     return render_template("register.html", var1=email)
 
+#发送邮件
+@app.route('/send_mail',methods=['POST', 'GET'])
+def Send_mail():
+    if request.method =="POST":
+        strart_send(request.form['email_address'])
+    return render_template('register.html',)
 
-@app.route('/button')
-def button():
-    return render_template('test/button.html')
+
+
 
 
 if __name__ == '__main__':
