@@ -18,8 +18,8 @@ def strart_send(to_addr,code):
     # to_addr = "809683605@qq.com"
     # 输入SMTP服务器地址:
     smtp_server = "smtp.163.com"
-    text = "hello, Your Verify code is "+code
-    msg = MIMEText(text, 'plain', 'utf-8')
+    text = "<pre> <h1>hello, Your Verify code is <h1> <br> <h2 style='color: red'>"+code+"</h2></pre>"
+    msg = MIMEText(text, 'html', 'utf-8')
     msg['From'] = _format_addr('TankWord官方 <%s>' % from_addr)
     msg['To'] = _format_addr('客户 <%s>' % to_addr)
     msg['Subject'] = Header('验证码邮件', 'utf-8').encode()
