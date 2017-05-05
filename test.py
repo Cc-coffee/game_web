@@ -7,6 +7,7 @@ import re
 from model import *
 from flask_bootstrap import Bootstrap
 from send_mail import *
+from  rand import GenPassword
 
 bootstrap = Bootstrap(app)
 # 时间
@@ -23,12 +24,15 @@ def md5(str):
     m.update(str.encode("utf8"))
     return m.hexdigest()
 
+#校验邮箱格式
 def validate_emails(e):
     if len(e)>= 5:
         if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]",e) !=None:
             #re.match(pattern, string) 尝试从字符串string的开始匹配一个模式。
             return None
     return True
+#全局变量验证码
+verify_send=None
 
 ##################################################################
 
@@ -59,9 +63,6 @@ def index():
 @app.route('/validate/login')
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    #  flash(u'登录成功，欢迎回来！', 'success')
-    #    flash(u'登录信息', 'info')
-    #  flash(u'登录警告', 'warning')
     if request.method == 'POST':
         try:
             uemail_1 = request.form['email']
@@ -76,7 +77,6 @@ def login():
                 return redirect(url_for('test'))
             else:
                 flash(u'用户名密码错', 'danger')
-                #  render_template("login.html")
     return render_template("login.html")
 
 
@@ -86,12 +86,19 @@ def login():
 def register():
     if request.method == 'POST':
         uemail = request.form['email']
-        upsd = md5(request.form['password'])
+        upwd = md5(request.form['password'])
         uname = request.form['username']
-        USER = User(email=uemail, password=upsd, username=uname)
-        db.session.add(USER)
-        db.session.commit()
-        return redirect(url_for("login"))
+        uverify = request.form['verify']
+        global verify_send
+        if uverify==verify_send:
+            USER = User(email=uemail, password=upwd, username=uname)
+            db.session.add(USER)
+            db.session.commit()
+            flash(u'注册成功', 'success')
+            return redirect(url_for("login"))
+        else:
+            flash(u'验证码输入错误', 'danger')
+            return render_template('register.html',var1=uemail,var2=uname,var3=upwd,var4=uverify)
     return render_template('register.html')
 
 #邮箱格式校验
@@ -114,11 +121,11 @@ def validate_email(email):
 @app.route('/send_mail',methods=['POST', 'GET'])
 def Send_mail():
     if request.method =="POST":
-        strart_send(request.form['email_address'])
+        global verify_send
+        verify_send=GenPassword(4)
+        print(verify_send)
+        strart_send(request.form['email_address'],verify_send)
     return render_template('register.html',)
-
-
-
 
 
 if __name__ == '__main__':

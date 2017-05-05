@@ -69,13 +69,13 @@
                     </div>
                     <div class="group-ipt user">
                         <input type="text" name="username" id="username" class="ipt" placeholder="设置用户名"
-                               required>
+                               required value={{ var2 }}>
                     </div>
                     <div class="group-ipt password">
                         <input type="password" onfocus="validate_password()" name="password" id="password"
                                class="ipt"
                                placeholder="设置登录密码"
-                               required>
+                               required  >
                     </div>
                     <div class="group-ipt password1">
                         <input type="password" onfocus="validate_password()" name="password_2" id="password_2"
@@ -84,7 +84,7 @@
                     </div>
                     <div class="group-ipt verify">
                         <input type="text" onfocus="validate_password()" name="verify" id="verify" class="ipt"
-                               placeholder="输入验证码" required>
+                               placeholder="输入验证码" required value={{ var4 }}>
                     </div>
                 </div>
             </div>
