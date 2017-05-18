@@ -90,12 +90,14 @@ def register():
     if request.method == 'POST':
         uemail = request.form['email']
         upwd = md5(request.form['password'])
-        uname = request.form['username']
+        uname = request.form['nickname']
         uverify = request.form['verify']
         global verify_send
         if uverify == verify_send:
-            USER = User(email=uemail, password=upwd, username=uname)
+            USER = User(email=uemail, password=upwd, nickname=uname)
+            ACCOUNT=Account(email=uemail, password=upwd, nickname=uname)
             db.session.add(USER)
+            db.session.add(ACCOUNT)
             db.session.commit()
             flash(u'注册成功', 'success')
             return redirect(url_for("login"))
@@ -124,6 +126,7 @@ def validate_email(email):
 
 # 发送邮件
 @app.route('/send_mail', methods=['POST', 'GET'])
+@app.route('/validate/send_mail',methods=['POST', 'GET'])
 def Send_mail():
     if request.method == "POST":
         print("---------")
@@ -132,7 +135,6 @@ def Send_mail():
             verify_send = GenPassword(4)
             strart_send(request.form['email_address'], verify_send)
         except:
-            flash(u"邮箱不存在", )
             return redirect(url_for("register"))
     return render_template('register.html', )
 

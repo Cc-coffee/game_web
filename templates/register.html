@@ -73,7 +73,7 @@
                                value={{ var1 }}>
                     </div>
                     <div class="group-ipt user">
-                        <input type="text" name="username" id="username" class="ipt" placeholder="设置用户名"
+                        <input type="text" name="nickname" id="nickname" class="ipt" placeholder="设置昵称"
                                required value={{ var2 }}>
                     </div>
                     <div class="group-ipt password">
@@ -189,9 +189,8 @@
             var url = $('#bigform').attr('action'); // 取Form中要提交的链接
             var param = {}; // 组装发送参数，下面只是举个例，请按需要修改
             param['email_address'] = $('#email').val();
-            param['password'] = $('#password').val();
             param['verify'] = $('#verify').val();
-            param['username'] = $('#username').val();
+            param['nickname'] = $('#nickname').val();
             postCfg = {
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             };

@@ -6,9 +6,16 @@ from config import *
 class User(db.Model):
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String(64), unique=False, index=True)
+    nickname = db.Column(db.String(64), unique=False, index=True)
     password = db.Column(db.String(64), )
     email = db.Column(db.String(64),unique=True)
+
+class Account(db.Model):
+    __tablename__ = 'account'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    nickname = db.Column(db.String(64), unique=False, index=True)
+    password = db.Column(db.String(64), )
+    email = db.Column(db.String(64), unique=True)
 
 #
 # if __name__ == '__main__':
