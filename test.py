@@ -92,17 +92,23 @@ def register():
         upwd = md5(request.form['password'])
         uname = request.form['nickname']
         uverify = request.form['verify']
-        global verify_send
-        if uverify == verify_send:
-            USER = User(email=uemail, password=upwd, nickname=uname)
-            ACCOUNT=Account(email=uemail, password=upwd, nickname=uname)
-            db.session.add(USER)
-            db.session.add(ACCOUNT)
-            db.session.commit()
-            flash(u'注册成功', 'success')
-            return redirect(url_for("login"))
+        try:
+            User.query.filter_by(email=uemail).first().email
+        except AttributeError:
+            global verify_send
+            if uverify == verify_send:
+                USER = User(email=uemail, password=upwd, nickname=uname)
+                ACCOUNT = Account(email=uemail, password=upwd, nickname=uname)
+                db.session.add(USER)
+                db.session.add(ACCOUNT)
+                db.session.commit()
+                flash(u'注册成功', 'success')
+                return redirect(url_for("login"))
+            else:
+                flash(u'验证码输入错误', 'danger')
+            return render_template('register.html', var1=uemail, var2=uname, var3=upwd, var4=uverify)
         else:
-            flash(u'验证码输入错误', 'danger')
+            flash(u'邮箱已经被注册', 'warning')
             return render_template('register.html', var1=uemail, var2=uname, var3=upwd, var4=uverify)
     return render_template('register.html')
 
