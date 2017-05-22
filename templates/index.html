@@ -1,90 +1,135 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Dimension by HTML5 UP</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="../static/home/assets/css/main.css"/>
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <noscript>
-        <link rel="stylesheet" href="../static/home/assets/css/noscript.css"/>
-    </noscript>
+    <title>Comila HTML CSS Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    {{ moment.include_jquery() }}
-    {{ moment.include_moment() }}
-    {{ moment.lang("zh-CN") }}
+    <link href="../static/download/style.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="../static/menu/css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/menu/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/menu/css/linkstyles.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/menu/css/default.css"/>
+
+    <link rel="stylesheet" href="../static/home/assets/css/main.css"/>
+    <!-- stylesheets css -->
+    <link rel="stylesheet" href="../static/index/css/vegas.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/ad/css/default.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--播放按钮特效-->
+    <style type="text/css">
+        div img {
+            cursor: pointer;
+            transition: all 0.6s;
+        }
+
+        div img:hover {
+            transform: scale(1.4);
+        }
+    </style>
 
 </head>
 <body>
 
-<!-- Wrapper -->
-<div id="wrapper"  >
 
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <span class="icon fa-diamond"></span>
-        </div>
-        <div class="content">
-            <div class="inner">
-                <h1>BattleWorld</h1>
-                <p>made by Cc</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="https://codeload.github.com/Cc-coffee/leetcode/zip/master" download="rar">Download</a>
-                </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="register">Register</a></li>
+<img style="position: absolute;left: 100px;" src="../static/index/images/icon.png">
 
-            </ul>
-        </nav>
+<!--有上角菜单栏-->
+<div style="position:absolute;right: 200px;top: 40px">
+    <a href="#" class="link link--yaku" style="color:white;font-family:华文行楷;margin-right: 30px">
+        <span>主</span><span>页</span>
+    </a>
+    <a id="aboutus" href="#about" class="link link--yaku" href="#" style="font-family:华文行楷;margin-right: 30px">
+        <span>关</span><span>于</span>
+    </a>
+    <a href="register" style=" font-family:华文行楷;" class="link link--yaku" href="#">
+        <span>客</span><span>服</span><span>专</span><span>区</span>
+    </a>
+</div>
+<!--观看视频连接-->
+<div style="position:absolute;right:25%;top: 40%;width: 200px;height: 100px">
 
-    </header>
-
-    <!-- Main -->
-    <div id="main" >
-
-        <!-- Intro -->
-        <article  id="intro" style="padding: 2rem 50rem 2rem 2rem;" >
-            <h2 class="major">Intro</h2>
-            {#            <span class="image main"><img src="../static/home/images/pic01.jpg" alt=""/></span>#}
-            <iframe  height="550" width="770" src="http://share.acg.tv/flash.swf?aid=1605364&page=1" ></iframe>
-
-        </article>
-
-        <!-- About -->
-        <article id="about" >
-            <h2 class="major">About</h2>
-            <span class="image main"><img src="../static/home/images/pic03.jpg" alt=""/></span>
-            <p style="text-align: center">欢迎使用</p>
-        </article>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="copyright">&copy; Untitled. Design: <a href="#">Cc</a>.</p>
-
-        <p style="padding-top: 50px">The local date and time is {{ moment(current_time).format('LLL') }}.</p>
-
-    </footer>
-
+    <a style="border-bottom: 0;font-family: 华文楷体" href="#Video"><img src="../static/index/images/play.png">观看视频</a>
 </div>
 
-<!-- BG -->
-<div id="bg"></div>
+<!--下载连接-->
+<div class="download" style="position:absolute;bottom: 30%;left: 50%">
+    <a id="download">DOWNLOAD</a>
+</div>
+<!--广告-->
+<div>
+    <p class="word1" style="font-family:楷体;position: absolute;left: 30%;bottom: 50%;color: #cf5d6a;font-size: 50px"
+       data-time="33100">
+    </p>
+    <p class="word2" style="font-family:隶书  ;position: absolute;left: 40%;bottom: 40%;color: #cf5d6a;font-size: 30px"
+       data-time="33100">
+    </p>
+</div>
 
-<!-- Scripts -->
-<script src="../static/home/assets/js/jquery.min.js"></script>
+<!-- Main -->
+<div id="main">
+    <!-- Video -->
+    <article id="Video" style="top:20px;padding: 20px 820px 10px 20px;">
+        <h2 class="major">Video</h2>
+        <iframe height="550px" width="800px" src="http://share.acg.tv/flash.swf?aid=1605364&page=1"></iframe>
+
+    </article>
+
+    <!-- About -->
+    <article id="about" style="top: 200px">
+        <h2 class="major">About</h2>
+        <p style="color:white;text-align: center">欢迎使用</p>
+    </article>
+</div>
+
+<!--分享图标-->
+<div style="position:absolute;right: 50px;top:35%;color: #cccccc">
+    <a href="#" style="color: white;margin-bottom: 10px;border-bottom: 0" class=" fa fa-envira fa-1x "></a> <br>
+    <a href="#" style="color: white;margin-bottom: 10px;border-bottom: 0" class=" fa fa-github fa-1x "></a><br>
+    <a href="#" style="color: white;margin-bottom: 10px;border-bottom: 0" class=" fa fa-twitter fa-1x "></a><br>
+    <a href="#" style="color: white;border-bottom: 0" class=" fa fa-facebook fa-1x "></a>
+</div>
+<!--角标-->
+<div style="position: absolute;bottom: 30px;left: 50px">
+    <p style="font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;">Made by Cc.@2017</p>
+</div>
+
+
+<!-- javscript js -->
+
+
+<script src="../static/index/js/jquery.js"></script>
+<script src="../static/index/js/vegas.min.js"></script>
+<script src="../static/index/js/wow.min.js"></script>
+<script src="../static/index/js/custom.js"></script>
+
+<script src="../static/ad/js/l-by-l.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".word1").lbyl({
+            content: "下班之后  ",
+            speed: 300,
+            type: 'show',
+
+            finished: function () {
+                $(".word2").lbyl({
+                    content: "---记得来盘游戏",
+                    speed: 300,
+                    type: 'show',
+                });
+            }
+        });
+    });
+</script>
+
 <script src="../static/home/assets/js/skel.min.js"></script>
 <script src="../static/home/assets/js/util.js"></script>
 <script src="../static/home/assets/js/main.js"></script>
 
 </body>
 </html>
-
-
-

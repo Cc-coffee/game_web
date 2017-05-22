@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dimension by HTML5 UP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../../static/home/assets/css/main.css"/>
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="../../static/home/assets/css/noscript.css"/>
+    </noscript>
+
+    {{ moment.include_jquery() }}
+    {{ moment.include_moment() }}
+    {{ moment.lang("zh-CN") }}
+
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper"  >
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <span class="icon fa-diamond"></span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>BattleWorld</h1>
+                <p>made by Cc</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="https://codeload.github.com/Cc-coffee/leetcode/zip/master" download="rar">Download</a>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="register">Register</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <div id="main" >
+
+        <!-- Intro -->
+        <article  id="intro" style="padding: 2rem 50rem 2rem 2rem;" >
+            <h2 class="major">Intro</h2>
+            {#            <span class="image main"><img src="../static/home/images/pic01.jpg" alt=""/></span>#}
+            <iframe  height="550" width="770" src="http://share.acg.tv/flash.swf?aid=1605364&page=1" ></iframe>
+
+        </article>
+
+        <!-- About -->
+        <article id="about" >
+            <h2 class="major">About</h2>
+            <span class="image main"><img src="../../static/home/images/pic03.jpg" alt=""/></span>
+            <p style="text-align: center">欢迎使用</p>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">&copy; Untitled. Design: <a href="#">Cc</a>.</p>
+
+{#        <p style="padding-top: 50px">The local date and time is {{ moment(current_time).format('LLL') }}.</p>#}
+
+    </footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../static/home/assets/js/jquery.min.js"></script>
+<script src="../../static/home/assets/js/skel.min.js"></script>
+<script src="../../static/home/assets/js/util.js"></script>
+<script src="../../static/home/assets/js/main.js"></script>
+
+</body>
+</html>
+
+
+

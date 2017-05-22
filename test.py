@@ -8,6 +8,8 @@ from model import *
 from flask_bootstrap import Bootstrap
 from send_mail import *
 from  rand import GenPassword
+####################################################
+
 
 bootstrap = Bootstrap(app)
 # 时间
@@ -40,27 +42,28 @@ verify_send = None
 
 ##################################################################
 
-# @app.route('/')
-# def hello_world():
-#     return 'Hello World!'
-@app.route('/test')
+
+#测试
+@app.route('/test', methods=['GET', 'POST'])
 def test():
-    return render_template('userinfo.html')
+    return render_template('test/home.html', )
 
 
 # 主页
 @app.route('/')
 def index():
-    return render_template('index.html', current_time=datetime.utcnow())
+    return render_template('index.html',)
 
 
 # 自定义错误页面
-# @app.errorhandler(404)
-# def page_not_found(e):
-#     return render_template('404.html'), 404
-# @app.errorhandler(500)
-# def internal_server_error(e):
-#     eturn render_template('500.html'), 500
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
 
 
 # 登录请求
@@ -77,7 +80,7 @@ def login():
             flash(u'用户名密码错', 'danger')
         else:
             if uemail_1 == uemail_2 and upsd_1 == upsd_2:
-                return redirect(url_for('test'))
+                return render_template('usercenter.html')
             else:
                 flash(u'用户名密码错', 'danger')
     return render_template("login.html")
@@ -132,7 +135,7 @@ def validate_email(email):
 
 # 发送邮件
 @app.route('/send_mail', methods=['POST', 'GET'])
-@app.route('/validate/send_mail',methods=['POST', 'GET'])
+@app.route('/validate/send_mail', methods=['POST', 'GET'])
 def Send_mail():
     if request.method == "POST":
         print("---------")

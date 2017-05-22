@@ -1,0 +1,24 @@
+
+.download {
+	text-align: center;
+	}
+.download a{
+		text-align: center;
+		font-size: 14px;
+		text-decoration: none;
+		padding: 13px 30px;
+		font-weight: 700;
+		color: #ffffff;
+		background: #39c9da;
+		border-radius: 5px;
+	}
+.download a:hover{
+	color:#39c9da;
+	background:#4b4a4b;
+	text-decoration: none;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+	-moz-transition: .5s all;
+	}
