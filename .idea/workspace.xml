@@ -1,124 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71d89a4d-51d7-414a-b443-ea1c53e449f5" name="Default" comment="修改主页面，添加用户中心">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/._bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/blog/._img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/features/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/features/._feature.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/bg_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/features/feature.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/video/video.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/about-img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/modal-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/slide-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/slide-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/color-switcher.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/lightgreen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/preset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/line-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/menu_sideslide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/nivo-lightbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/owl.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/classie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/color-switcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/contact-form-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/form-validator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.counterup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.magnific-popup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.mixitup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.stellar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.vide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/mixitup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/nivo-lightbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/smooth-on-scroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/smooth-scroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/tether.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/waypoints.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/wow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/less/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/less/responsive.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/php/form-process.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/et-line-font.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/vegas.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/smoothscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/vegas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/wow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/New_index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
+    <list default="true" id="71d89a4d-51d7-414a-b443-ea1c53e449f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -169,21 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="-169">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1917">
-              <caret line="79" column="38" lean-forward="false" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+            <state relative-caret-position="567">
+              <caret line="79" column="38" lean-forward="true" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -712,15 +596,22 @@
       <option name="project" value="LOCAL" />
       <updated>1495457944141</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改主页面">
+      <created>1495770602790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495770602790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -749,7 +640,8 @@
     <MESSAGE value="修改数据库信息" />
     <MESSAGE value="修改密码校验，&#10;使用SSL端口465发送邮件" />
     <MESSAGE value="修改主页面，添加用户中心" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改主页面，添加用户中心" />
+    <MESSAGE value="修改主页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改主页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1059,18 +951,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="79" column="38" lean-forward="false" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+        <state relative-caret-position="-169">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="567">
+          <caret line="79" column="38" lean-forward="true" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
           <folding />
         </state>
       </provider>
