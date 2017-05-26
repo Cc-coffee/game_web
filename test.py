@@ -46,13 +46,13 @@ verify_send = None
 #测试
 @app.route('/test', methods=['GET', 'POST'])
 def test():
-    return render_template('test/home.html', )
+    return render_template('New_index/index.html', )
 
 
 # 主页
 @app.route('/')
 def index():
-    return render_template('index.html',)
+    return render_template('New_index/index.html', )
 
 
 # 自定义错误页面

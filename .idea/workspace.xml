@@ -1,45 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71d89a4d-51d7-414a-b443-ea1c53e449f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/images/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/images/slide-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/images/slide-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/ad/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/ad/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/ad/js/jquery-1.11.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/ad/js/l-by-l.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/ad/js/l-byl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/background/js/canvas-particle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/clock/css/fliptimer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/clock/js/jquery-1.11.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/clock/js/jquery.fliptimer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/download/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/css/vegas.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/js/vegas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/index/js/wow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu/css/linkstyles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/usercenter.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/userinfo.html" afterPath="" />
+    <list default="true" id="71d89a4d-51d7-414a-b443-ea1c53e449f5" name="Default" comment="修改主页面，添加用户中心">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/._.DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/._bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/blog/._img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/features/._.DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/features/._feature.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._.DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/__MACOSX/img/portfolio/._img6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/bg_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/blog/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/features/feature.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/portfolio/img6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/img/testimonial/customer3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/video/video.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/about-img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/modal-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/slide-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/images/slide-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/color-switcher.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/lightgreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/colors/preset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/line-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/menu_sideslide.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/nivo-lightbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/owl.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/Linearicons-Free.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/classie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/color-switcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/contact-form-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/form-validator.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.counterup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.mixitup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.stellar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/jquery.vide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/mixitup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/nivo-lightbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/smooth-on-scroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/smooth-scroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/tether.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/js/wow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/less/main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/less/responsive.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/New_index/php/form-process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/et-line-font.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/css/vegas.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/et-line.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/smoothscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/vegas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/test/js/wow.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/New_index/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/login/style/register-login.css" afterPath="$PROJECT_DIR$/static/login/style/register-login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +129,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/test$database.coverage" NAME="database Coverage Results" MODIFIED="1493822200283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1495455413116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1495768800970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/test$model.coverage" NAME="model Coverage Results" MODIFIED="1495018525193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$rand.coverage" NAME="rand Coverage Results" MODIFIED="1493961538655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$config.coverage" NAME="config Coverage Results" MODIFIED="1495018512582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -59,61 +137,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="jquery.vide.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.vide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8100">
+              <caret line="307" column="78" lean-forward="false" selection-start-line="307" selection-start-column="78" selection-end-line="307" selection-end-column="78" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3375">
-              <caret line="125" column="11" lean-forward="false" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="500.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/500.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/templates/New_index/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1242">
-              <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/test/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="70" column="101" lean-forward="false" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1971">
-              <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+              <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -122,18 +162,48 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3024">
+              <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usercenter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/usercenter.html">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="27">
+              <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1917">
+              <caret line="79" column="38" lean-forward="false" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test/1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -158,6 +228,10 @@
       <find>focus</find>
       <find>请填写</find>
       <find>mysqldb</find>
+      <find>about</find>
+      <find>mp4</find>
+      <find>video</find>
+      <find>price</find>
     </findStrings>
     <dirStrings>
       <dir>D:\documents\GitHub\flask\test</dir>
@@ -169,10 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/static/button/css/code-demo.css" />
-        <option value="$PROJECT_DIR$/static/input/css/input-style.css" />
-        <option value="$PROJECT_DIR$/static/background/css/back.css" />
         <option value="$PROJECT_DIR$/templates/index6.html" />
         <option value="$PROJECT_DIR$/static/home/assets/css/google.css" />
         <option value="$PROJECT_DIR$/static/login/js/index.js" />
@@ -188,14 +258,12 @@
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/static/home/assets/css/main.css" />
         <option value="$PROJECT_DIR$/send_mail.py" />
-        <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/templates/test/Template_Bootstrap.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/static/clock/js/jquery-1.11.3.min.js" />
         <option value="$PROJECT_DIR$/static/clock/css/fliptimer.css" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/test/admin.html" />
         <option value="$PROJECT_DIR$/templates/admin.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
@@ -215,11 +283,17 @@
         <option value="$PROJECT_DIR$/static/spin/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/static/spin/js/jquery.rotate.min.js" />
         <option value="$PROJECT_DIR$/static/index/js/jquery.js" />
-        <option value="$PROJECT_DIR$/templates/test/1.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/test/home.html" />
+        <option value="$PROJECT_DIR$/static/test/js/custom.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/test/1.html" />
+        <option value="$PROJECT_DIR$/static/New_index/js/jquery.magnific-popup.min.js" />
+        <option value="$PROJECT_DIR$/static/New_index/js/jquery.vide.js" />
+        <option value="$PROJECT_DIR$/templates/New_index/index.html" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -251,6 +325,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,7 +369,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,19 +378,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\documents\GitHub\flask\test\static\index\images" />
-      <recent name="D:\documents\GitHub\flask\test\static\spin" />
-      <recent name="D:\documents\GitHub\flask\test\static\bootstrap\css" />
-      <recent name="D:\documents\GitHub\flask\test\static\signature" />
-      <recent name="D:\documents\GitHub\flask\test\static\blur" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\documents\GitHub\flask\test\templates\test" />
       <recent name="D:\documents\GitHub\flask\test\templates" />
+      <recent name="D:\documents\GitHub\flask\test\static\New_index" />
       <recent name="D:\documents\GitHub\flask\test\static" />
       <recent name="D:\documents\GitHub\flask\test\static\bootstrap" />
-      <recent name="D:\documents\GitHub\flask\test\static\bootstrap\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\documents\GitHub\flask\test\static\New_index\img\portfolio" />
+      <recent name="D:\documents\GitHub\flask\test\static\New_index\img\features" />
+      <recent name="D:\documents\GitHub\flask\test\static\New_index\video" />
+      <recent name="D:\documents\GitHub\flask\test\templates\New_index" />
+      <recent name="D:\documents\GitHub\flask\test\static\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -631,13 +705,20 @@
       <option name="project" value="LOCAL" />
       <updated>1495263591367</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改主页面，添加用户中心">
+      <created>1495457944140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495457944141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -667,57 +748,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改数据库信息" />
     <MESSAGE value="修改密码校验，&#10;使用SSL端口465发送邮件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改密码校验，&#10;使用SSL端口465发送邮件" />
+    <MESSAGE value="修改主页面，添加用户中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改主页面，添加用户中心" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/index/js/smoothscroll.js" />
-    <entry file="file://$PROJECT_DIR$/static/index/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/static/menu/css/lsb.css" />
-    <entry file="file://$PROJECT_DIR$/templates/menu/about.html" />
-    <entry file="file://$PROJECT_DIR$/templates/menu/css/lsb.css" />
-    <entry file="file://$PROJECT_DIR$/templates/menu/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/static/menu/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/templates/menu/index.html" />
-    <entry file="file://$PROJECT_DIR$/static/download/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/static/download/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/ad/js/l-byl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/video/css/demo.css" />
-    <entry file="file://$PROJECT_DIR$/static/video/img/rated.png" />
-    <entry file="file://$PROJECT_DIR$/static/video/js/classie.js" />
-    <entry file="file://$PROJECT_DIR$/static/login/style/register-login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="264" column="29" lean-forward="false" selection-start-line="264" selection-start-column="29" selection-end-line="264" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/blur/css/jquery.popuplayer.min.css" />
-    <entry file="file://$PROJECT_DIR$/static/blur/js/jquery-2.1.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/static/blur/js/jquery.popuplayer.min.js" />
-    <entry file="file://$PROJECT_DIR$/static/blur/css/htmleaf-demo.css" />
     <entry file="file://$PROJECT_DIR$/static/signature/d.css" />
     <entry file="file://$PROJECT_DIR$/static/signature/d.js" />
     <entry file="file://$PROJECT_DIR$/static/signature/3DEngine.js" />
@@ -763,20 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/home/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index/css/vegas.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/ad/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -786,14 +810,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/spin/js/jquery.min.js" />
     <entry file="file://$PROJECT_DIR$/static/spin/js/jquery.rotate.min.js" />
-    <entry file="file://$PROJECT_DIR$/static/index/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test/1.html" />
     <entry file="file://$PROJECT_DIR$/static/spin/images/chrome.png" />
     <entry file="file://$PROJECT_DIR$/static/home/images/pic01.jpg">
       <provider selected="true" editor-type-id="images">
@@ -829,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,31 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="125" column="11" lean-forward="false" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,22 +859,218 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index/css/vegas.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index/js/vegas.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index/js/wow.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/test/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/test/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1647">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/home/assets/css/noscript.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/home/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/css/colors/blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/classie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/color-switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/contact-form-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/form-validator.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.counterup.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.magnific-popup.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="416" column="74" lean-forward="true" selection-start-line="416" selection-start-column="74" selection-end-line="416" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.mixitup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.stellar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/New_index/js/jquery.vide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8100">
+          <caret line="307" column="78" lean-forward="false" selection-start-line="307" selection-start-column="78" selection-end-line="307" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/New_index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        <state relative-caret-position="1917">
+          <caret line="79" column="38" lean-forward="false" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test/home.html">
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="70" column="101" lean-forward="false" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
+        <state relative-caret-position="27">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding />
         </state>
       </provider>
