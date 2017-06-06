@@ -8,6 +8,7 @@ from model import *
 from flask_bootstrap import Bootstrap
 from send_mail import *
 from  rand import GenPassword
+
 ####################################################
 
 
@@ -36,6 +37,14 @@ def validate_emails(e):
     return True
 
 
+# 校验密码格式
+def validate_password(e):
+    if len(e) >= 6 and len(e) <= 12:
+        if re.match("[a-zA-Z]+[0-9]", e) != None:
+            return None
+    return True
+
+
 # 全局变量验证码
 verify_send = None
 
@@ -43,7 +52,7 @@ verify_send = None
 ##################################################################
 
 
-#测试
+# 测试
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     return render_template('New_index/index.html', )
@@ -66,12 +75,60 @@ def internal_server_error(e):
     return render_template('500.html'), 500
 
 
+# 用户中心
+@app.route('/usercenter', methods=['POST', 'GET'])
+def usercenter():
+    if request.method == 'POST':
+        nickname = request.form['nickname']
+        signature = request.form['signature']
+        gender = request.form['gender']
+        birthday = request.form['birthday']
+        purpose = request.form['purpose']
+        try:
+            a = User.query.filter_by(email=uemail_1).first()
+            a.nickname = nickname
+            a.signature = signature
+            a.gender = gender
+            a.birthday = birthday
+            a.purpose = purpose
+            db.session.add(a)
+            db.session.commit()
+            flash(u'修改成功', 'success')
+        except:
+            flash(u'修改失败', 'danger')
+        finally:
+            return render_template("usercenter.html", email=uemail_1, nickname=nickname, signature=signature,
+                                   gender=gender, birthday=birthday, purpose=purpose)
+    return render_template("usercenter.html", email=uemail_1)
+
+
+# 修改密码
+@app.route('/modifypwd', methods=['POST', 'GET'])
+def modifypwd():
+    if request.method == 'POST':
+        upwd_1 = request.form['password_1']
+        upwd_2 = request.form['password_2']
+        if upwd_1 == upwd_2:
+            if (validate_password(upwd_1)):
+                flash(u'密码格式不符合以字母开头的6-12位的字母数字组合', 'danger')
+            else:
+                upwd_1 = md5(upwd_1)
+                a = User.query.filter_by(email=uemail_1).first()
+                a.password = upwd_1
+                db.session.commit()
+                flash(u'修改成功', 'success')
+        else:
+            flash(u'2次密码不一致', 'danger')
+    return render_template("modifypwd.html", email=uemail_1)
+
+
 # 登录请求
 @app.route('/validate/login')
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method == 'POST':
         try:
+            global uemail_1
             uemail_1 = request.form['email']
             uemail_2 = User.query.filter_by(email=uemail_1).first().email
             upsd_1 = md5(request.form['password'])
@@ -80,7 +137,8 @@ def login():
             flash(u'用户名密码错', 'danger')
         else:
             if uemail_1 == uemail_2 and upsd_1 == upsd_2:
-                return render_template('usercenter.html')
+                nickname = User.query.filter_by(email=uemail_1).first().nickname
+                return render_template('usercenter.html', email=uemail_1, nickname=nickname)
             else:
                 flash(u'用户名密码错', 'danger')
     return render_template("login.html")
@@ -138,7 +196,6 @@ def validate_email(email):
 @app.route('/validate/send_mail', methods=['POST', 'GET'])
 def Send_mail():
     if request.method == "POST":
-        print("---------")
         try:
             global verify_send
             verify_send = GenPassword(4)

@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 
 
 #flask_mail配置
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 app.config['MAIL_SERVER'] = 'smtp.163.com'
 app.config['MAIL_PORT'] = 465

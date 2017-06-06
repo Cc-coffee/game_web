@@ -141,7 +141,7 @@
 
     {#  验证密码强度  #}
     function isPassword(password) {
-        var regex = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}/;
+        var regex = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}/;
         return regex.test(password);
     }
 

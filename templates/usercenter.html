@@ -22,15 +22,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="/">Home</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">个人中心</a></li>
+                <li><a href="usercenter">个人中心</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="modifypwd">修改密码</a></li>
             </ul>
         </div>
     </div>
 </div>
+
+<div style="text-align: center; width: 800px;margin: 0 auto">
+    {% for message in get_flashed_messages(with_categories=True) %}
+        <div class="alert alert-{{ message[0] }}">
+            <button id="flash" type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message[1] }}
+        </div>
+    {% endfor %}
+</div>
+
 <div class="container">
     <div class="page-header" style="width: 80%;margin-left: 10%">
         <h1>Hello</h1>
@@ -42,29 +55,30 @@
             </div>
         </div>
     </div>
-    <form class="form-horizontal" role="form" style="width: 60%; margin-left: 20%;">
+    <form action="usercenter" method="post" class="form-horizontal" role="form" style="width: 60%; margin-left: 20%;">
         <div class="form-group">
             <label for="email" class="col-sm-2 control-label">邮箱:</label>
             <div class="col-sm-10">
-                <input style="width: 40%" class="form-control" id="email" type="text" placeholder="该输入框禁止输入..."
-                       disabled>
+                <input style="text-align: center;width: 40%" class="form-control" id="email" type="text" placeholder="{{ email}}"
+                       readonly>
             </div>
         </div>
         <div class="form-group">
             <label for="nickname" class="col-sm-2 control-label">昵称:</label>
             <div class="col-sm-10">
-                <input style="width: 50%" type="text" class="form-control" id="nickname" placeholder="请输入名字">
+                <input style="width: 50%" value="{{ nickname }}" type="text" class="form-control" name="nickname" id="nickname" placeholder="{{ nickname }}">
             </div>
         </div>
         <div class="form-group">
             <label for="signature" class="col-sm-2 control-label">我的签名:</label>
             <div class="col-sm-10">
-                <textarea id="signature" class="form-control" rows="3"></textarea>
+                <textarea id="signature" name="signature" placeholder="{{ signature }}" class="form-control" rows="3"></textarea>
             </div>
         </div>
         <div class="form-group">
             <label for="sex" class="col-sm-2 control-label">性别:</label>
             <div class="col-sm-10" style="margin-top: 5px">
+                <input style="text-align: center;width: 10%;display: inline;" class="form-control"  name="gender" id="gender" type="text" placeholder="{{ gender }}" readonly>
                 <font id="sex1" onclick="changebgcolor(1)" style="background-color: #dcdcdc"
                       class="btn btn-default btn-xs">男
                 </font>
@@ -81,19 +95,20 @@
         <div class="form-group">
             <label for="birthday" class="col-sm-2 control-label">出生日期:</label>
             <div class="col-sm-10">
-                <input style="width: 40%" class="form-control" id="birthday" type="date" value="2017-05-20"/>
+                <input style="width: 40%" class="form-control" name="birthday" id="birthday" type="date" value="{{ birthday }}"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="area" class="col-sm-2 control-label">交友目的:</label>
+            <label for="purpose" class="col-sm-2 control-label">交友目的:</label>
             <div class="col-sm-10">
-                <select id="area" class="form-control" style="width: 30%">
+                <input style="width: 30%;display: inline;" class="form-control"  id="purpose_1" type="text" placeholder="{{ purpose}}" readonly>
+                <select  id="purpose" name="purpose" value="{{ purpose }}" class="form-control" style="text-align: center;width: 30%;display: inline;">
                     <option>--请选择--</option>
-                    <option>网友</option>
-                    <option>玩伴</option>
-                    <option>共同兴趣</option>
-                    <option>男性朋友</option>
-                    <option>女性朋友</option>
+                    <option name="netfriend" id="netfriend">网友</option>
+                    <option name="palyfriend" id="palyfriend">玩伴</option>
+                    <option name="hobby" id="hobby">共同兴趣</option>
+                    <option name="male" id="male">男性朋友</option>
+                    <option name="female" id="female">女性朋友</option>
                 </select>
             </div>
         </div>
@@ -134,6 +149,11 @@
 </script>
 <script>
     function changebgcolor(b) {
+        switch (b) {
+            case 1:$('#gender').val("男");break;
+            case 2:$('#gender').val("女");break;
+            case 3:$('#gender').val("保密");break;
+        }
         for (var i = 1; i <= 3; i++)
             if (i == b)
                 document.getElementById("sex" + i).style.background = "#00A0D8";
@@ -141,5 +161,6 @@
                 document.getElementById("sex" + i).style.background = "#dcdcdc";
     }
 </script>
+
 </body>
 </html>

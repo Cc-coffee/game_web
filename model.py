@@ -9,6 +9,10 @@ class User(db.Model):
     nickname = db.Column(db.String(64), unique=False, index=True)
     password = db.Column(db.String(64), )
     email = db.Column(db.String(64),unique=True)
+    signature = db.Column(db.String(45))
+    gender = db.Column(db.String(45))
+    birthday = db.Column(db.String(45))
+    purpose = db.Column(db.String(45))
 
 class Account(db.Model):
     __tablename__ = 'account'
