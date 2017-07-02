@@ -16,7 +16,7 @@
 # def strart_send(to_addr,code):
 #     # 输入Email地址和口令:
 #     from_addr = "tiancheng8096836@163.com"
-#     password = "HTC940122"
+#     password = "********"
 #     # 输入收件人地址:
 #     # to_addr = "809683605@qq.com"
 #     # 输入SMTP服务器地址:
