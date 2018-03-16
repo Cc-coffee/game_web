@@ -61,7 +61,7 @@ def str_To_list(str):
 
 # 启动发送
 def strart_send(recipients, code):
-    msg = Message(subject='验证码邮件', sender="tiancheng8096836@163.com", recipients=str_To_list(recipients))
+    msg = Message(subject='验证码邮件', sender="*******", recipients=str_To_list(recipients))
     #  msg.body = text_body
     msg.html = "<pre> <h1>hello, Your Verify code is <h1>  <h2 style='color: red'>" + code + "</h2></pre>"
 
