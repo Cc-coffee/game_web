@@ -15,10 +15,10 @@
 #
 # def strart_send(to_addr,code):
 #     # 输入Email地址和口令:
-#     from_addr = "tiancheng8096836@163.com"
+#     from_addr = "********"
 #     password = "********"
 #     # 输入收件人地址:
-#     # to_addr = "809683605@qq.com"
+#     # to_addr = "*******"
 #     # 输入SMTP服务器地址:
 #     smtp_server = "smtp.163.com"
 #     text = "<pre> <h1>hello, Your Verify code is <h1> <br> <h2 style='color: red'>"+code+"</h2></pre>"
