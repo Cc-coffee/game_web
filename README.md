@@ -1,4 +1,4 @@
-# test
+# game_web-for-battle-city
 
 基于 Flask 的游戏官网的 Demo
 
